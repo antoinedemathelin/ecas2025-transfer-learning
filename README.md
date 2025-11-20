@@ -9,7 +9,6 @@ This hands-on tutorial introduces fundamental concepts and practical application
 ## 📂 Repository Contents
 
 - **Jupyter Notebooks**: Interactive exercises with guided questions and implementations
-- **Python Scripts**: Helper functions and utilities for transfer learning algorithms
 - **Datasets**: Sample datasets for hands-on practice
 
 ## 🛠️ Prerequisites

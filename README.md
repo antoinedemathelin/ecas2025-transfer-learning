@@ -2,6 +2,8 @@
 
 This repository contains the tutorial materials for the Transfer Learning workshop at **ECAS 2025**.
 
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/antoinedemathelin/ecas2025-transfer-learning/HEAD)
+
 ## 📚 Overview
 
 This hands-on tutorial introduces fundamental concepts and practical applications of **Transfer Learning** and **Domain Adaptation** techniques. Through interactive Jupyter notebooks, participants will explore how to leverage pre-trained models and adapt them to new domains where training data may be limited or distributed differently.

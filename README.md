@@ -2,8 +2,9 @@
 
 This repository contains the tutorial materials for the Transfer Learning workshop at **ECAS 2025**.
 
-First TD is on Colab:
-[![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/13VZbOO5zkYNTBNwUux_M079-cq6yz0HO?usp=sharing)
+The first TD is on Colab!
+- Synthetic Datasets: [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/11rn9N_n-kAS1ZHamHIst2hd0hTRWHvxZ?usp=sharing)
+- Real-World Datasets: [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/13VZbOO5zkYNTBNwUux_M079-cq6yz0HO?usp=sharing)
 
 You can also try Binder:
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/antoinedemathelin/ecas2025-transfer-learning/HEAD)

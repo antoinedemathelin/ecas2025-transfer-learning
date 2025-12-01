@@ -7,7 +7,9 @@ The first TD is on Colab!
 - Real-World Datasets: [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/13VZbOO5zkYNTBNwUux_M079-cq6yz0HO?usp=sharing)
 
 You can also try Binder:
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/antoinedemathelin/ecas2025-transfer-learning/HEAD)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/antoinedemathelin/ecas2025-transfer-learning/HEAD) (slower)
+
+Or run the notebooks on your laptop (see [Installation](#Installation))
 
 ## 📚 Overview
 

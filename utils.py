@@ -42,7 +42,7 @@ def show_rare_event(X_full, y_full, X_mc=None, y_mc=None, weights=None, threshol
     im = ax.scatter(X_full[:, 0], X_full[:, 1], c=y_full)
     ax.set_xlabel("X1", fontsize=15); ax.set_ylabel("X2", fontsize=15);
     title = title.split("_")[1]
-    ax.set_title(r"%s:   $P(y > \tau) = %.4f$"%(title, np.mean(y_full > 670)), fontsize=16)
+    ax.set_title(r"%s:   $P(y > \tau) = %.5f$"%(title, np.mean(y_full > 670)), fontsize=16)
     divider = make_axes_locatable(ax)
     cax = divider.append_axes('right', size='5%', pad=0.05)
     cbar = ax.figure.colorbar(im, cax=cax, orientation='vertical')
@@ -50,10 +50,10 @@ def show_rare_event(X_full, y_full, X_mc=None, y_mc=None, weights=None, threshol
     if X_mc is not None:
         if weights is None:
             ax.plot(X_mc[:, 0], X_mc[:, 1], "o", c="w", markeredgecolor="k")
-            ax.set_title(r"%s:   $\hat{P}(y > \tau) = %.4f$"%(title, np.mean(y_mc > 670)), fontsize=16)
+            ax.set_title(r"%s:   $\hat{P}(y > \tau) = %.5f$"%(title, np.mean(y_mc > 670)), fontsize=16)
         else:
             ax.scatter(X_mc[:, 0], X_mc[:, 1], s=weights*30, marker="o", facecolor="w", edgecolor="k")
-            ax.set_title(r"%s:   $\hat{P}(y > \tau) = %.4f$"%(title, np.round(np.mean(weights*(y_mc > 670)), 4)), fontsize=16)
+            ax.set_title(r"%s:   $\hat{P}(y > \tau) = %.5f$"%(title, np.round(np.mean(weights*(y_mc > 670)), 4)), fontsize=16)
     return ax
     
 
@@ -71,7 +71,7 @@ def show_gaussian(Xs=None, Xt=None, ys=None, yt=None, model=None, weights=None,
     Xt = Xt.ravel()
 
     if ys is None and yt is None:
-        fig, ax = plt.subplots(1, 1, figsize=(8, 3))
+        fig, ax = plt.subplots(1, 1, figsize=(6, 3))
 
         alpha = 0.1
         for x in Xs:
@@ -101,17 +101,17 @@ def show_gaussian(Xs=None, Xt=None, ys=None, yt=None, model=None, weights=None,
         ax.set_ylabel(r"$\widehat{p_s}(x)$", fontsize=16)
         
         if weights is None:
-            sns.kdeplot(Xs, label=r"$\widehat{p_s}(x)$", ax=ax, shade=True)
+            sns.kdeplot(Xs, label=r"$\widehat{p_s}(x)$", ax=ax, fill=True)
         else:
             np.random.seed(123)
             bs_index = np.random.choice(len(Xs), 3 * len(Xs), p=weights/weights.sum())
-            sns.kdeplot(Xs[bs_index], label=r"$w(x) \widehat{p_s}(x)$", ax=ax, shade=True)
-        sns.kdeplot(Xt, label=r"$\widehat{p_t}(x)$", ax=ax, shade=True)
+            sns.kdeplot(Xs[bs_index], label=r"$w(x) \widehat{p_s}(x)$", ax=ax, fill=True)
+        sns.kdeplot(Xt, label=r"$\widehat{p_t}(x)$", ax=ax, fill=True)
 
-        ax.legend(fontsize=16, loc="upper right", bbox_to_anchor=(1.4, 1.05))
+        ax.legend(fontsize=16, loc="upper right", bbox_to_anchor=(1.6, 1.05))
     
     else:
-        fig = plt.figure(figsize=(8, 8))
+        fig = plt.figure(figsize=(6, 6))
 
         gs = fig.add_gridspec(2, 1, height_ratios=(2, 1),
                               left=0.1, right=0.9, bottom=0.1, top=0.9,
@@ -204,6 +204,6 @@ def show_gaussian(Xs=None, Xt=None, ys=None, yt=None, model=None, weights=None,
 
         lns = lns1 + [lns2] + lns3 + lns8 + [lns6] + lns7 + lns4 + lns5
         labs = [l.get_label() for l in lns]
-        ax1.legend(lns, labs, fontsize=16, loc="upper right", bbox_to_anchor=(1.4, 1.05))
+        ax1.legend(lns, labs, fontsize=16, loc="upper right", bbox_to_anchor=(1.6, 1.05))
 
     plt.show()

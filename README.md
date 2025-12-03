@@ -3,6 +3,7 @@
 This repository contains the tutorial materials for the Transfer Learning workshop at **ECAS 2025**.
 
 TDs are available on Colab!
+- Importance Weighting : [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/12H3_weyp1ELUZ6up_464gCHXOq0na2Sy?usp=sharing)
 - PINNS : [pinns-tutorial](https://github.com/nguyenkhoa0209/pinns_tutorial)
 - Synthetic Datasets: [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/11rn9N_n-kAS1ZHamHIst2hd0hTRWHvxZ?usp=sharing)
 - Real-World Datasets: [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/13VZbOO5zkYNTBNwUux_M079-cq6yz0HO?usp=sharing)

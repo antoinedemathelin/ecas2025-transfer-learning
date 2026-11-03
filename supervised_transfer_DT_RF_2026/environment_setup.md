@@ -61,7 +61,7 @@ python -m pip install \
     "adapt==0.4.5"
 ```
 
-**Why a pip step?** This is a **Conda-first hybrid installation**, not a claim that every dependency is distributed via Conda. ADAPT is provided on PyPI and the requested SciKeras version may not be found in your Conda channels. Using `python -m pip` after `conda activate adapt_trees` installs into **that environment only**. Do not run `conda install` again for the same pip-installed packages unless intentionally resolving dependencies.
+ADAPT is provided on PyPI and the requested SciKeras version may not be found in your Conda channels. Using `python -m pip` after `conda activate adapt_trees` installs into **that environment only**. Do not run `conda install` again for the same pip-installed packages unless intentionally resolving dependencies.
 
 ### A4. Register the Jupyter kernel
 

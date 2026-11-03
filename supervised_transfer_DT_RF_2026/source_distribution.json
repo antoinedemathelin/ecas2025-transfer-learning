@@ -1,0 +1,120 @@
+{
+  "schema_version": 1,
+  "name": "seven_clusters_moderately_separated_candidate",
+  "description": "Candidate: seven heterogeneous Gaussian components; slightly more separated means and smaller covariance axes than v4; binary class equals cluster label, irregular regression responses.",
+  "means": [
+    [
+      -4.23625,
+      2.53125
+    ],
+    [
+      -2.44125,
+      -1.8937499999999998
+    ],
+    [
+      -0.24125000000000002,
+      0.6812500000000001
+    ],
+    [
+      1.81875,
+      2.5812500000000003
+    ],
+    [
+      2.62875,
+      -0.8237500000000001
+    ],
+    [
+      4.70875,
+      0.71125
+    ],
+    [
+      0.76375,
+      -3.5687500000000005
+    ]
+  ],
+  "weights": [
+    0.13,
+    0.13,
+    0.16,
+    0.14,
+    0.16,
+    0.12,
+    0.16
+  ],
+  "cov_params": [
+    [
+      1.87,
+      1.02,
+      18.0
+    ],
+    [
+      1.53,
+      1.02,
+      -50.0
+    ],
+    [
+      1.7,
+      0.85,
+      80.0
+    ],
+    [
+      1.275,
+      0.935,
+      -5.0
+    ],
+    [
+      1.615,
+      0.935,
+      40.0
+    ],
+    [
+      1.19,
+      0.68,
+      14.0
+    ],
+    [
+      1.3175,
+      0.9774999999999999,
+      -60.0
+    ]
+  ],
+  "labels": [
+    0,
+    1,
+    0,
+    1,
+    1,
+    0,
+    1
+  ],
+  "regression_base_levels": [
+    1.3902473264644,
+    -0.628665491436886,
+    0.22111074927453567,
+    0.1188774292129735,
+    1.1340705638324213,
+    -1.2697070553645915,
+    1.080253544435459
+  ],
+  "regression_local_amplitudes": [
+    0.18,
+    0.1,
+    0.16,
+    0.22,
+    0.14,
+    0.09,
+    0.19
+  ],
+  "regression_gradient_angles_deg": [
+    25.0,
+    -35.0,
+    75.0,
+    10.0,
+    -55.0,
+    140.0,
+    92.0
+  ],
+  "regression_noise_std": 0.28,
+  "regression_curvature_amplitude": 0.06,
+  "regression_curvature_frequency": 1.2
+}
